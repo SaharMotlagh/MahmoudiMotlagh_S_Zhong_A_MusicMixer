@@ -1,7 +1,5 @@
 # MahmoudiMotlagh_S_Zhong_A_MusicMixer
 
-![Music Game](first-scene.jpg "music game")
-
 ## MusicMixer!
 <br>
 All the music instruments are broken.
