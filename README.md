@@ -42,7 +42,7 @@ Developer
 <br>
 Aixin Zhong
 <br>
-Enjoy!
+Enjoy!!
 
 ### License 
 MIT
