@@ -2,9 +2,9 @@
 
 ## MusicMixer!
 <br>
-All the music instruments are broken.
-Player should drag the correct music instrument and drop it to the right place. 
-This action helps them to see  the complete shape of music instrument, beside hear its sound.
+There is no music instrument to play the music.
+Player should drag the music instrument and drop it to the place. 
+This action helps them to see the music instrument, beside hear its sound.
 
 ### Installation
 <br>
@@ -18,9 +18,10 @@ Clone the project, <code>cd</code> to your directory/download, and run the quiz.
 ### Rules
 Please follow these steps:
 <br>
-+ All the music instruments are broken.
-+ Player should drag and drop the correct items to the right place. 
-+ This action helps them to see the complete shape of music instrument, beside hear its sound.
++ There is no music instrument to play the music.
++ Player should drag the music instrument and drop it to the place. 
++ This action helps them to see the music instrument, beside hear its sound.
+
 <br>
 **Choose music instrument wisely!**
 
