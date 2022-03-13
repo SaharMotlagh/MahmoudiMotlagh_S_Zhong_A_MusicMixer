@@ -8,24 +8,11 @@
 </head>
 <body>
 	<header id="headLine">
-		<h1>Drag the correct music instrument to fit the right place.</h1>
-		<p>Hear it sounds</p>
+		<img id="titleCenter" src="images/welcome-musicGame-header.png">
+		<!-- <h1>Welcome</h1>
+		<h1>Music Game</h1> -->
 	</header>
 	<section id="game-boards">
-		<!-- these are the draggable pieces -->
-		<div class="puzzle-pieces">
-			<!-- replace the images with the svg images in the future -->
-			<!-- top left: dram 
-				 top right: org
-				 bottom left: guitar
-				 bottom right: violon
-			-->
-			<img id="topLeft" draggable="true" src="images/dram.png" class="puzzle-image" alt="top left">
-			<img id="topRight" draggable="true" src="images/org-01.png" class="puzzle-image" alt="top right">
-			<img id="bottomLeft" draggable="true" src="images/guitar.png" class="puzzle-image" alt="bottom left">
-			<img id="bottomRight" draggable="true" src="images/violon-01.png" class="puzzle-image" alt="bottom right">
-		</div>
-
 		<!-- drop the draggable pieces here -->
 		<div class="puzzle-board">
 			<div class="drop-zone tl"></div>
@@ -35,6 +22,15 @@
 		</div>
 		<!-- need to add broken music instruments -->
 		<!-- need music elements -->
+		<!-- <img id="menuCenter" src="images/music-board.png"> -->
+		<!-- these are the draggable pieces -->
+		<div class="puzzle-pieces">
+			<!-- replace the images with the svg images in the future -->
+			<img id="boxOne" draggable="true" src="images/org-01.png" class="puzzle-image" >
+			<img id="boxTwo" draggable="true" src="images/violon-01.png" class="puzzle-image" >
+			<img id="boxThree" draggable="true" src="images/dram.png" class="puzzle-image" >
+			<img id="boxFour" draggable="true" src="images/guitar.png" class="puzzle-image" >
+		</div>
 	</section>
 
 	<script src="js/main.js"></script>

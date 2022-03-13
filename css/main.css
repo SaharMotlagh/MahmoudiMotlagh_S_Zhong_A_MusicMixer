@@ -1,11 +1,29 @@
 @charset "utf-8";
 /* CSS Document */
+
+header {
+	position: relative;
+	top: 100px;
+	/* width:1200px; */
+	margin: 0px auto;
+	/* background: url('../images/welcome-musicGame-header.png'); */
+	text-align: center;
+}
+#titleCenter {
+	width: 55%;
+}
+
+/* header h1 {
+	font-size: 3.25em;
+	letter-spacing: 3px;
+	margin: 10px 0
+} */
+
+
 body {
 	margin: 0px;
 	border: 0px;
-	/* background-image:url(../images/puzzle2.jpg); */
-	background-repeat:repeat;
-	background-color: #333;
+	background: url('../images/dark-bc-01.png') no-repeat center;
 	color:#FFF;
 	font-family: 'Luckiest Guy', sans-serif;
 	font-size:16px;
@@ -16,21 +34,31 @@ body {
 	text-align: center;
 }
 
-.puzzle-pieces, .puzzle-board {
-	margin-top: 40px;
-	height: 400px;
+.puzzle-board {
+	margin-top: 85px;
+	/* height: 400px; */
 	display: inline-block;
-	border: medium solid #333;
-	background-color: #000;
-	color: inherit;
-	overflow: hidden;
+	/* border: medium solid #333; */
+	/* background-image: url('../images/music-board.png'); */
+	/* background-color: #000; */
+	/* color: inherit; */
+	/* overflow: hidden; */
 }
+
 
 /* need to change puzzle pieces position and layout*/
 .puzzle-pieces {
 	width: 1200px;
-	margin-right: 20px;
-
+	height: 550px;
+	background-image: url('../images/music-board.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: inline-block;
+	/* border: medium solid #333; */
+	/* background-image: url('../images/music-board.png'); */
+	/* background-color: #000; */
+	/* color: inherit; */
+	/* overflow: hidden; */
 }
 
 .puzzle-board {
@@ -41,14 +69,14 @@ body {
 }
 
 .puzzle-image {
-	width: 10%;
-	/* display: block; */
-	display:block;
-	padding: 8px;
-	cursor: pointer;
+	width: 13%;
+	display:inline-block;
+	padding: 40px;
+	margin-top: -40px;
+	/* cursor: pointer; */
 }
 
-.puzzle-image:nth-child(even) {
+/* .puzzle-image:nth-child(even) {
 	float: right;
 	clear: both;
 }
@@ -56,16 +84,27 @@ body {
 	float: left;
 	clear: both;
 }
+*/
 
 
-.drop-zone {
+/* .drop-zone {
 	width: 50%;
 	height: 50%;
-  /* border: thin dashed white; */
+	border: thin dashed white;
 	float: left;
 	position: relative;
 }
+ */ 
 
+
+.drop-zone {
+	width: 350px;
+	height: 800px;
+	margin: 20px;
+	/* border: thin dashed white; */ /* to show the border, remember clean */
+	float: left;
+	position: relative;
+}
 
 /* reset the drop zone images */
 .drop-zone img {
@@ -102,22 +141,11 @@ body {
 }
 /*{ right: 0; }*/
 
-
-
-header {
-	position: relative;
-	top: 20px;
-	width:1200px;
-	margin: 0px auto;
-	text-align: center;
+#menuCenter {
+	width: 80%;
+	margin-top: 55px;
 }
 
-header h1 {
-	font-size: 3.25em;
-	letter-spacing: 3px;
-	margin: 10px 0
-}
 
-header p { font-size: 1.7em; letter-spacing: 2px; margin: 10px 0 }
 
 
