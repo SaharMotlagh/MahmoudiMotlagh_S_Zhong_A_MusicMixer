@@ -1,151 +1,125 @@
-@charset "utf-8";
-/* CSS Document */
+@charset "UTF-8";
+
+.hidden {
+  display: none;
+}
 
 header {
 	position: relative;
 	top: 100px;
-	/* width:1200px; */
 	margin: 0px auto;
-	/* background: url('../images/welcome-musicGame-header.png'); */
 	text-align: center;
 }
+
+
 #titleCenter {
 	width: 55%;
 }
-
-/* header h1 {
-	font-size: 3.25em;
-	letter-spacing: 3px;
-	margin: 10px 0
-} */
-
 
 body {
 	margin: 0px;
 	border: 0px;
 	background: url('../images/dark-bc-01.png') no-repeat center;
-	color:#FFF;
 	font-family: 'Luckiest Guy', sans-serif;
 	font-size:16px;
 }
 
-#game-boards {
+#boards {
 	width: 100%;
 	text-align: center;
 }
 
-.puzzle-board {
-	margin-top: 85px;
-	/* height: 400px; */
-	display: inline-block;
-	/* border: medium solid #333; */
-	/* background-image: url('../images/music-board.png'); */
-	/* background-color: #000; */
-	/* color: inherit; */
-	/* overflow: hidden; */
-}
-
-
-/* need to change puzzle pieces position and layout*/
-.puzzle-pieces {
-	width: 1200px;
-	height: 550px;
-	background-image: url('../images/music-board.png');
-	background-repeat: no-repeat;
-	background-size: 100%;
-	display: inline-block;
-	/* border: medium solid #333; */
-	/* background-image: url('../images/music-board.png'); */
-	/* background-color: #000; */
-	/* color: inherit; */
-	/* overflow: hidden; */
-}
-
-.puzzle-board {
-	width: 1667px;
+.music-board {
+  width: 1667px;
 	height: 834px;
 	background-image: url('../images/bc.jpg');
 	background-repeat: no-repeat;
+  margin-top: 85px;
+	display: inline-block;
 }
 
-.puzzle-image {
-	width: 13%;
-	display:inline-block;
-	padding: 40px;
-	margin-top: -40px;
-	/* cursor: pointer; */
+.instruments {
+  width: 1200px;
+  height: 550px;
+  background-image: url(../images/music-board.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  display: inline-block;
 }
 
-/* .puzzle-image:nth-child(even) {
-	float: right;
-	clear: both;
-}
-.puzzle-image:nth-child(odd) {
-	float: left;
-	clear: both;
-}
-*/
 
+.display {
+  display: inline-flex;
+  flex-direction: row;
+  margin-top: 50px;
+  max-width: 1000px;
+}
 
-/* .drop-zone {
-	width: 50%;
-	height: 50%;
-	border: thin dashed white;
-	float: left;
+.board-1 {
 	position: relative;
+  left: 200px;
+  top: 340px;
 }
- */ 
 
-
-.drop-zone {
-	width: 350px;
-	height: 800px;
-	margin: 20px;
-	/* border: thin dashed white; */ /* to show the border, remember clean */
-	float: left;
+.board-2 {
 	position: relative;
+  left: 600px;
+  top: 20px;
 }
 
-/* reset the drop zone images */
-.drop-zone img {
-	width: 30% !important;
-	float: none;
-	position: absolute;
-	padding: 0;
+.board-3 {
+	position: relative;
+  left: 830px;
+  top: 150px;
 }
 
-/* place each puzzle piece where it needs to go */
-/* These positions are exactly fit to puzzle-board background image */
-/* Do not change it unless the puzzle-board background image changed */
-.tl img { 
-	position: absolute;
-	right: 30px;
-}
-/* { right: 0; bottom: 1; } */
-.tr img {
-	position: absolute;
-	right: 200px;
-	top: 215px;
-}
-/*{ right: 0; bottom: 0; } */
-.bl img {
-	position: absolute;
-	right: 390px;
-	bottom: 390px;
-}
-/*{ right: 0; } */
-.br img {
-	position: absolute;
-	right: 650px;
-	bottom: 260px;
-}
-/*{ right: 0; }*/
-
-#menuCenter {
-	width: 80%;
-	margin-top: 55px;
+.board-4 {
+	position: relative;
+  left: 1240px;
+  bottom: 250px;
 }
 
+.drag-box{
+  height: 150px;
+  width: 200px;
+}
 
+.display-1 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 600px;
+}
 
+.idisplay-2 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 600px;
+}
 
+.display-3 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 600px;
+}
+
+.display-4 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 600px;
+}
+
+.reset-button {
+  display: flex;
+  justify-content: space-evenly;
+  order: 1;
+}
+
+button#reset{
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+}
