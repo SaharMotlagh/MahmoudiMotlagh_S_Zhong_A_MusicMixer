@@ -1,38 +1,78 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-	<title>Drag and Drop Puzzle Game</title>
-	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Forest Music Mixer</title>
 </head>
-<body>
-	<header id="headLine">
-		<img id="titleCenter" src="images/welcome-musicGame-header.png">
-		<!-- <h1>Welcome</h1>
-		<h1>Music Game</h1> -->
-	</header>
-	<section id="game-boards">
-		<!-- drop the draggable pieces here -->
-		<div class="puzzle-board">
-			<div class="drop-zone tl"></div>
-			<div class="drop-zone tr"></div>
-			<div class="drop-zone bl"></div>
-			<div class="drop-zone br"></div>
-		</div>
-		<!-- need to add broken music instruments -->
-		<!-- need music elements -->
-		<!-- <img id="menuCenter" src="images/music-board.png"> -->
-		<!-- these are the draggable pieces -->
-		<div class="puzzle-pieces">
-			<!-- replace the images with the svg images in the future -->
-			<img id="boxOne" draggable="true" src="images/org-01.png" class="puzzle-image" >
-			<img id="boxTwo" draggable="true" src="images/violon-01.png" class="puzzle-image" >
-			<img id="boxThree" draggable="true" src="images/dram.png" class="puzzle-image" >
-			<img id="boxFour" draggable="true" src="images/guitar.png" class="puzzle-image" >
-		</div>
-	</section>
 
-	<script src="js/main.js"></script>
+<body>
+
+  <header id="headLine">
+    <h1 class="hidden">Forest Music Mixer</h1>
+      <img id="titleCenter" src="images/welcome-musicGame-header.png">
+    </header>
+  </header>
+
+  <section id="boards">
+
+    <div class="music-board">
+      <div class="board-1">
+       <div class="drag-box"></div>
+      </div>
+
+      <div class="board-2">
+        <div class="drag-box"></div>
+      </div>
+
+      <div class="board-3">
+        <div class="drag-box"></div>
+      </div>
+
+      <div class="board-4">
+        <div class="drag-box"></div>
+      </div>
+  
+    </div>
+
+    <div class="instruments">
+      <div class="display">
+
+      <div class="display-1">
+        <div class="piano">
+          <img id="icon_Test1" data-audio="audio/piano.wav" src="images/org-01.png" alt="icon_Test" draggable="true">
+        </div>
+      </div>
+      
+      <div class="display-2">
+        <div class="violin">
+          <img id="icon_Test2" data-audio="audio/violin.wav" src="images/violon-01.png" alt="icon_Test" draggable="true">
+        </div>
+      </div>
+
+      <div class="display-3">
+        <div class="dram">
+          <img id="icon_Test3" data-audio="audio/drum.wav" src="images/dram.png" alt="icon_Test" draggable="true">
+        </div>
+      </div>
+      
+      <div class="display-4">
+        <div class="guitar">
+          <img id="icon_Test4" data-audio="audio/guitar.wav" src="images/guitar.png" alt="icon_Test" draggable="true">
+        </div>
+      </div>
+
+
+      <div class="reset-button">
+        <button id="reset" onclick=location=URL>RESET</button>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
